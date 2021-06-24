@@ -15,7 +15,7 @@
 
 <!DOCTYPE html>
 <html>
-	<?php include('header.php'); ?>
+	<?php include('templates/header.php'); ?>
 	
 	<h4 class="center grey-text">Pizza!</h4>
 
@@ -24,6 +24,7 @@
 			<?php foreach ($pizzas as $pizza): ?>
 				<div class="col s6 md3">
 					<div class="card z-depth-0">
+						<img src="img/pizza.svg" class="pizza">
 						<div class="card-content center">
 							<h6><?php echo htmlspecialchars($pizza['title']); ?></h6>
 							<div>
@@ -36,7 +37,7 @@
 							</div>
 						</div>
 						<div class="card-action right-align">
-							<a class="brand-text" href="#">More info</a>
+							<a class="brand-text" href="details.php?id=<?php echo $pizza['id']; ?>">More info</a>
 						</div>
 					</div>
 				</div>
@@ -51,6 +52,6 @@
 		</div>
 	</div>
 
-	<?php include('footer.php') ?>
+	<?php include('templates/footer.php') ?>
 
 </html>
