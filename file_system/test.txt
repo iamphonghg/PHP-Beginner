@@ -1,0 +1,2 @@
+Khi truy cập, phần header trả về có thông tin về thiết lập Cookie, ngược lại nếu đã có Cookie khi trình duyệt gửi yêu cầu - nó thiết lập giá trị cookie vào phần header của request
+Hoặc dùng lệnh curl để xem header trả về:
